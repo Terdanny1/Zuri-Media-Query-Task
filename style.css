@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-image: url("images/bg-intro-desktop.png");
+  background-repeat: no-repeat;
+  background-color: hsl(0, 100%, 74%);
+}
+
+main {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  padding: 20%;
+}
+
+.left-div {
+  width: 50%;
+  margin-right: 10%;
+}
+
+.right-div {
+  width: 50%;
+  box-sizing: border-box;
+}
+
+.topic {
+  line-height: 1.2;
+  font-weight: 700;
+font-size: 40px;
+}
+
+.text{
+    margin-top: 30px;
+    font-size: 12px;
+}
+
+.trial {
+  width: 100%;
+  background-color: hsl(248, 32%, 49%);
+  padding: 12px;
+  text-align: center;
+  border-radius: 9px;
+  box-shadow: 0px 5px 1px 0px rgba(110, 109, 109, 0.3);
+  font-size: 12px;
+}
+
+.trial-span{
+    color: #fff;
+    
+}
+
+.form-div {
+  width: 100%;
+  margin-top: 20px;
+}
+
+form {
+  border-radius: 5px;
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0px 5px 1px 0px rgba(110, 109, 109, 0.3);
+}
+
+input {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+input:focus {
+  border: solid 1px hsl(248, 32%, 49%);
+  outline:  solid 1px hsl(248, 32%, 49%);
+}
+
+.submit {
+  background-color: hsl(154, 59%, 51%);
+  color: white;
+  padding: 14px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.terms {
+  color: hsl(246, 25%, 77%);
+  font-size: 8px;
+  text-align: center;
+}
+
+span {
+  color: hsl(0, 100%, 74%);
+  font-weight: bold;
+}
