@@ -34,12 +34,12 @@ main {
 .topic {
   line-height: 1.2;
   font-weight: 700;
-font-size: 40px;
+  font-size: 40px;
 }
 
-.text{
-    margin-top: 30px;
-    font-size: 12px;
+.text {
+  margin-top: 30px;
+  font-size: 12px;
 }
 
 .trial {
@@ -52,9 +52,8 @@ font-size: 40px;
   font-size: 12px;
 }
 
-.trial-span{
-    color: #fff;
-    
+.trial-span {
+  color: #fff;
 }
 
 .form-div {
@@ -80,24 +79,88 @@ input {
 
 input:focus {
   border: solid 1px hsl(248, 32%, 49%);
-  outline:  solid 1px hsl(248, 32%, 49%);
+  outline: solid 1px hsl(248, 32%, 49%);
 }
 
 .submit {
   background-color: hsl(154, 59%, 51%);
+  box-shadow: 0px 5px 1px 0px rgba(31, 206, 8, 0.3);
   color: white;
   padding: 14px 20px;
   border: none;
   cursor: pointer;
 }
 
+.submit:hover {
+  background-color: hsl(154, 59%, 70%);
+}
+
 .terms {
   color: hsl(246, 25%, 77%);
   font-size: 8px;
   text-align: center;
+  margin: 10px;
+}
+br {
+  display: none;
 }
 
+.mobile-terms{
+    display: none;
+}
 span {
   color: hsl(0, 100%, 74%);
   font-weight: bold;
+}
+
+@media only screen and (max-width: 680px) {
+  main {
+    flex-direction: column;
+    width: 100%;
+    margin: 10px 0;
+    padding: 0;
+  }
+
+  .topic {
+    text-align: center;
+    font-size: 20px;
+    margin-top: 30px;
+    width: 60%;
+  }
+
+  .text {
+    text-align: center;
+    justify-content: center;
+    font-size: 15px;
+    text-justify: inter-word;
+    margin-bottom: 30px;
+    width: 70%;
+  }
+
+  .right-div {
+    margin: 0;
+    width: 80%;
+  }
+
+  .left-div {
+    margin: 0;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .trial-text {
+    padding: 10px 50px;
+    font-size: 15px;
+  }
+  br {
+    display: block;
+  }
+  .mobile-terms{
+      display: block;
+  }
+  .terms{
+      margin-top: 8px;
+      font-size:12px;
+  }
 }
